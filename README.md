@@ -186,6 +186,10 @@ print(f'pip install --upgrade pip && pip install "unsloth[{x}] @ git+https://git
 
 ### Windows Installation
 
+`xformers` requires v0.0.28.post1 - https://github.com/facebookresearch/xformers/releases/tag/v0.0.28.post1
+cuda 2.4.1
+https://github.com/pytorch/pytorch/blob/main/RELEASE.md#release-compatibility-matrix
+
 To run Unsloth directly on Windows:
 - Install Triton from this Windows fork and follow the instructions: https://github.com/woct0rdho/triton-windows
 - In the SFTTrainer, set `dataset_num_proc=1` to avoid a crashing issue:
